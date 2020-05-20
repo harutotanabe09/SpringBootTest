@@ -33,4 +33,16 @@ public class ServiceTest {
   /* テスト計算 part4
    */
   public void nomethod() {}
+
+  /* publicメソッド
+   */
+  public String publicMethod(String str) {
+    return privateMethod("public " + str);
+  }
+
+  /* privateメソッド
+   */
+  private String privateMethod(String str) {
+    return "test " + str;
+  }
 }

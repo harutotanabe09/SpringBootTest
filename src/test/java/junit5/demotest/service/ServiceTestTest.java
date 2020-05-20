@@ -34,4 +34,10 @@ class ServiceTestTest {
     assertEquals(200, test.ifCalc(2, 3), "パターン2");
     assertEquals(4, test.ifCalc(2, 2), "パターン2");
   }
+
+  @DisplayName("Privateメソッド含む")
+  @Test
+  public void privateCallTest() {
+    assertEquals("test public 1", test.publicMethod("1"));
+  }
 }
